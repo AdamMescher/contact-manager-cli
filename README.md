@@ -1,8 +1,5 @@
 # contact-manager-cli
-Interactive command-line contact management system that allows users to create, read, and manage their contacts from the shell, allowing users to perform basic CRUD operation from the shell with ease.
-
-### Technologies
-
+Interactive command-line contact management system that allows users to create, read, and manage their contacts from the shell. 
 * Node.js
 * Commander.js
 * Inquirer.js
