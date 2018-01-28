@@ -2,8 +2,8 @@
 Interactive command-line contact management system that allows users to create, read, and manage their contacts from the shell. 
 * Node.js
 * Commander.js: light-weight command-line library for Node.js
-* Inquirer.js: collection of powerful interactive command-line interfaces
-* MongoDB: NoSQL document-oriented database
+* Inquirer.js: collection of powerful interactive command-line interfaces. Used for gathering user input from the command-line.
+* MongoDB: NoSQL document-oriented database. Used for data persistence.
 
 This is my first forray into the Node.js Commander module and MongoDB. 
 
