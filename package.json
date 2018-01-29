@@ -1,0 +1,19 @@
+{
+  "name": "contact-manager",
+  "version": "0.0.1",
+  "description": "interactive command-line contact management system that allows users to create, read, and manage their contacts from the shell",
+  "main": "logic.js",
+  "scripts": {
+    "test": "t"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamMescher/contact-manager-cli.git"
+  },
+  "author": "Adam Mescher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdamMescher/contact-manager-cli/issues"
+  },
+  "homepage": "https://github.com/AdamMescher/contact-manager-cli#readme"
+}
