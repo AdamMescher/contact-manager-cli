@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const assert = require('assert');
-const db = mongoose.connect('mongodb://localhost:27017/contact-manager');
 mongoose.Promise = global.Promise;
+const db = mongoose.connect('mongodb://localhost:27017/contact-manager');
 
 const toLower = v => v.toLowerCase();
 const contactSchema = mongoose.Schema({
@@ -11,7 +11,6 @@ const contactSchema = mongoose.Schema({
     email: { type: String, set: toLower }
 });
 const Contact = mongoose.model('Contact', contactSchema);
-
 const addContact = contact => {
     Contact.create(contact, err => {
         assert.equal(null, err);
@@ -19,7 +18,6 @@ const addContact = contact => {
         db.disconnect();
     });
 };
-
 const getContact = name => {
     const search = new RegExp(name, 'i');
     Contact.find({$or: [{ firstName: search }, { lastName: search }]})
@@ -31,4 +29,4 @@ const getContact = name => {
     })
 }
 
-
+module.exports = { addContact, getContact };
